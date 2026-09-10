@@ -1,0 +1,56 @@
+munitid,transrec,dormrec,growrec,optimal,recommend_cycle,test_note
+1,0,3,0,1,2524,guidance == implemented. Update on diagonal
+2,2,6,8,1,2524,guidance == implemented. Update on diagonal
+3,0,6,8,1,2524,guidance == implemented. Update on diagonal
+4,2,8,8,1,2524,guidance == implemented. Update on diagonal
+5,2,3,3,1,2524,guidance == implemented. Update on diagonal
+6,0,8,8,1,2524,guidance == implemented. Update on diagonal
+7,2,9,3,1,2524,guidance == implemented. Update on diagonal
+8,0,9,3,1,2524,guidance == implemented. Update on diagonal
+9,2,7,3,1,2524,guidance == implemented. Update on diagonal
+10,1,3,3,1,2524,guidance == implemented. Update on diagonal
+11,0,7,3,1,2524,guidance == implemented. Update on diagonal
+12,0,3,3,1,2524,guidance == implemented. Update on diagonal
+13,3,6,8,1,2524,guidance == implemented. Update on diagonal
+14,3,3,3,1,2524,guidance == implemented. Update on diagonal
+15,4,3,4,1,2524,guidance == implemented. Update on diagonal
+16,5,3,5,1,2524,guidance == implemented. Update on diagonal
+17,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+18,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+19,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+20,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+21,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+22,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+23,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+24,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+25,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+26,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+27,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+28,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+29,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+30,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+31,0,3,0,1,2524,Guidance was GRG; implemented was not. Update on GRG row
+32,0,3,0,1,2524,Not a PAMF combination: do not update matrix
+33,5,3,5,1,2524,Not a PAMF combination: do not update matrix
+34,5,3,5,1,2524,Not a PAMF combination: do not update matrix
+35,5,3,5,1,2524,Not a PAMF combination: do not update matrix
+36,5,3,5,1,2524,Not a PAMF combination: do not update matrix
+37,5,3,5,1,2524,Not a PAMF combination: do not update matrix
+38,5,3,5,1,2524,Not a PAMF combination: do not update matrix
+39,4,3,4,1,3534,data package from a different cycle
+1,0,3,0,0,2524,Near-optimal guidance. Do not use in update
+2,2,6,8,0,2524,Near-optimal guidance. Do not use in update
+3,0,6,8,0,2524,Near-optimal guidance. Do not use in update
+4,2,8,8,0,2524,Near-optimal guidance. Do not use in update
+5,2,3,3,0,2524,Near-optimal guidance. Do not use in update
+6,0,8,8,0,2524,Near-optimal guidance. Do not use in update
+7,2,9,3,0,2524,Near-optimal guidance. Do not use in update
+8,0,9,3,0,2524,Near-optimal guidance. Do not use in update
+9,2,7,3,0,2524,Near-optimal guidance. Do not use in update
+10,1,3,3,0,2524,Near-optimal guidance. Do not use in update
+11,0,7,3,0,2524,Near-optimal guidance. Do not use in update
+12,0,3,3,0,2524,Near-optimal guidance. Do not use in update
+13,3,6,8,0,2524,Near-optimal guidance. Do not use in update
+14,3,3,3,0,2524,Near-optimal guidance. Do not use in update
+15,4,3,4,0,2524,Near-optimal guidance. Do not use in update
+16,5,3,5,0,2524,Near-optimal guidance. Do not use in update

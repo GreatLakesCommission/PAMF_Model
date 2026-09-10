@@ -1,0 +1,94 @@
+type,name,unit,cost_per_unit,herb_code,cost_year,web_source,source_date,note
+human,student,hour,13.71,,2022,"https://www.glassdoor.com/Salaries/student-worker-salary-SRCH_KO0,14.htm",,
+human,student,hour,12,,2022,https://www.ziprecruiter.com/Salaries/Student-Worker-Salary,,
+human,student,hour,8.58,,2022,https://www.indeed.com/career/student-worker/salaries,,
+human,seasonal,hour,16.11,,2022,https://www.bls.gov/ooh/life-physical-and-social-science/biological-technicians.htm,2020,Forest and Conservation Workers mean wage
+human,seasonal,hour,23.43,,2022,https://www.federalpay.org/employees/occupations/forestry-technician,2020,Forestry Technician
+human,seasonal,hour,18.95,,2022,https://www.federalpay.org/employees/occupations/laboring,2020,USFWS 'Laborer'
+human,seasonal,hour,20.42,,2022,https://www.federalpay.org/employees/occupations/laboring,2020,NPS 'Laborer'
+human,full,hour,16.11,,2022,https://www.bls.gov/ooh/life-physical-and-social-science/biological-technicians.htm,2020,Forest and Conservation Workers mean wage
+human,full,hour,22.8,,2022,https://www.federalpay.org/employees/occupations/biological-science-technician,2020,Biological Science Technician; wage divided by 2080 hours
+human,full,hour,33.18,,2022,https://www.bls.gov/oes/current/oes191031.htm,2020,Conservation scientist - mean wage
+human,full,hour,23.43,,2022,https://www.federalpay.org/employees/occupations/forestry-technician,2020,Forestry Technician
+human,full,hour,18.95,,2022,https://www.federalpay.org/employees/occupations/laboring,2020,USFWS 'Laborer'
+human,full,hour,20.42,,2022,https://www.federalpay.org/employees/occupations/laboring,2020,NPS 'Laborer'
+glyphosate,AquaNeat,gallon,,2,2022,forestry-suppliers.com,1/25/2022,Discontinued
+glyphosate,AquaMaster,gallon,39.98,3,2022,seedworldusa.com,1/25/2022,Updated
+glyphosate,Accord Concentrate,gallon,60.2,1,2022,forestry-suppliers.com,1/25/2022,"called ""Accord XRT II Herbicide"" ?"
+glyphosate,AquaPro,gallon,,4,2022,http://diy.sepro.com/aquapro-3,1/25/2022,Discontinued
+glyphosate,AquaStar,gallon,58.8,5,2022,https://www.domyown.com/aqua-star-herbicide-p-1820.html,1/25/2022,Updated
+glyphosate,Glyphos Aquatic,gallon,,6,2022,,1/25/2022,Could not find
+glyphosate,Glyphomate 41 Weed and Grass Killer Plus,gallon,43.67,7,2022,https://www.tractorsupply.com/tsc/product/farmworks-grass-weed-killer-41-glyphosate-concentrate-2-1-2-gal,1/25/2022,Updated
+glyphosate,Rodeo,gallon,59.9,8,2022,https://www.forestry-suppliers.com/product_pages/products.php?mi=50821&itemnum=17110,1/25/2022,Updated
+glyphosate,Roundup Custom,gallon,56.1,9,2022,forestry-suppliers.com,1/25/2022,Updated
+glyphosate,Roundup WeatherMAX,gallon,,10,2022,cropwatch.unl.edu,1/25/2022,Could not find. Discontinued?
+glyphosate,Shore-Klear,gallon,45.11,11,2022,https://pentairaes.com/shore-klear-25-gallons.html,1/25/2022,Updated
+glyphosate,Shore-Klear Plus,gallon,59.99,12,2022,https://www.tractorsupply.com/tsc/product/applied-biochemists-shoreklear-plus-aquatic-herbicide,1/25/2022,Updated
+glyphosate,Shoreline Defense,gallon,126.99,13,2022,https://www.pondandgardendepot.com/algae-control-water-treatments/pond-logic-shoreline-defense-aquatic-herbicide/?sku=POT-AM-107,1/25/2022,Updated
+glyphosate,VisionMAX,gallon,,14,2022,,1/25/2022,Could not find
+glyphosate,Roundup ProMax,gallon,60.2,16,2022,forestry-suppliers.com,1/25/2022,Added 2022. New version of weathermax?
+glyphosate,Farm General Aquatic Herbicide,gallon,54.98,17,2022,https://www.homedepot.com/p/1-Gal-Aquatic-Herbicide-53-8-Glyphosate-Concentrate-75298/304755435,1/25/2022,Added 2022. Used by a participant.
+glyphosate,Alligare Glyphosate 5.4,gallon,38,18,2022,https://www.lakeproinc.com/product/glyphosate-5-4/,1/25/2022,Added 2022. Used by a participant.
+imazapyr,Arsenal,gallon,153.18,1,2022,forestrydistributing.com,1/25/2022,updated
+imazapyr,Arsenal Powerline,gallon,87.98,2,2022,forestrydistributing.com,1/25/2022,updated
+imazapyr,Habitat,gallon,119.98,3,2022,forestrydistributing.com,1/25/2022,updated
+imazapyr,Nufarm Polaris,gallon,82.38,4,2022,forestrydistributing.com,1/25/2022,updated
+imazapyr,Nufarm Polaris AC Complete,gallon,159.98,5,2022,forestrydistributing.com,1/25/2022,updated
+imazapyr,Alligare Imazapyr 4 SL,gallon,146.95,7,2023,https://www.forestrydistributing.com/imazapyr-4-sl-herbicide-generic-arsenal-ac-alligare,4/5/2023,Submitted request to add to web hub options
+imazapyr,Habitat Aqua,gallon,624.40,8,2023,From GLPC member,4/5/2023,Submitted request to add to web hub options
+added,Arsenal,gallon,153.18,1,2022,forestrydistributing.com,1/25/2022,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate. This table captures that encoding with prices auto-populated from the table above
+added,Arsenal Powerline,gallon,87.98,2,2022,forestrydistributing.com,1/25/2022,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate. This table captures that encoding with prices auto-populated from the table above
+added,ClearCast,gallon,350.95,3,2022,forestrydistributing.com,1/25/2022,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate. This table captures that encoding with prices auto-populated from the table above
+added,Habitat,gallon,119.98,4,2022,forestrydistributing.com,1/25/2022,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate. This table captures that encoding with prices auto-populated from the table above
+added,Nufarm Polaris,gallon,82.38,5,2022,forestrydistributing.com,1/25/2022,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate. This table captures that encoding with prices auto-populated from the table above
+added,Nufarm Polaris AC Complete,gallon,159.98,6,2022,forestrydistributing.com,1/25/2022,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate. This table captures that encoding with prices auto-populated from the table above
+added,Alligare Imazapyr 4 SL,gallon,146.95,8,2023,https://www.forestrydistributing.com/imazapyr-4-sl-herbicide-generic-arsenal-ac-alligare,4/5/2023,Submitted request to add to web hub options
+added,Habitat Aqua,gallon,624.40,9,2023,From GLPC member,4/5/2023,Submitted request to add to web hub options
+fuel,gas,gallon,3.23,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Michigan, USA"
+fuel,gas,gallon,3.06,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Wisconsin, USA"
+fuel,gas,gallon,3.55,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Illinois, USA"
+fuel,gas,gallon,3.5,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Indiana, USA"
+fuel,gas,gallon,3.1,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Ohio, USA"
+fuel,gas,gallon,3.16,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Pennsylvania, USA"
+fuel,gas,gallon,3.49,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: New York, USA"
+fuel,gas,gallon,3.14,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Minnesota, USA"
+fuel,gas,gallon,5,,2022,globalpetrolprices.com,1/25/2022,Canada
+fuel,diesel,gallon,3.57,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Michigan, USA"
+fuel,diesel,gallon,3.47,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Wisconsin, USA"
+fuel,diesel,gallon,3.63,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Illinois, USA"
+fuel,diesel,gallon,3.66,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Indiana, USA"
+fuel,diesel,gallon,3.65,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Ohio, USA"
+fuel,diesel,gallon,3.99,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Pennsylvania, USA"
+fuel,diesel,gallon,3.84,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: New York, USA"
+fuel,diesel,gallon,3.57,,2022,https://gasprices.aaa.com/?state=US,1/25/2022,"Location: Minnesota, USA"
+fuel,diesel,gallon,4.61,,2022,globalpetrolprices.com,1/25/2022,Canada
+fuel,jet,gallon,4.92,,2022,100LL.com,1/25/2022,Northcentral US
+fuel,jet,gallon,5.28,,2022,100LL.com,1/25/2022,Northeast US
+fuel,avgas,gallon,5.79,,2022,100LL.com,1/25/2022,Northeast US
+fuel,avgas,gallon,5.46,,2022,100LL.com,1/25/2022,Northcentral US
+electricity,electricity,kWh,0.1,,2022,https://www.eia.gov/electricity/state/,11/4/2021,"Location: Illinois, USA"
+electricity,electricity,kWh,0.1,,2022,https://www.eia.gov/electricity/state/,11/4/2021,"Location: Indiana, USA"
+electricity,electricity,kWh,0.12,,2022,https://www.eia.gov/electricity/state/,11/4/2021,"Location: Michigan, USA"
+electricity,electricity,kWh,0.11,,2022,https://www.eia.gov/electricity/state/,11/4/2021,"Location: Minnesota, USA"
+electricity,electricity,kWh,0.15,,2022,https://www.eia.gov/electricity/state/,11/4/2021,"Location: New York, USA"
+electricity,electricity,kWh,0.09,,2022,https://www.eia.gov/electricity/state/,11/4/2021,"Location: Ohio, USA"
+electricity,electricity,kWh,0.1,,2022,https://www.eia.gov/electricity/state/,11/4/2021,"Location: Pennsylvania, USA"
+electricity,electricity,kWh,0.11,,2022,https://www.eia.gov/electricity/state/,11/4/2021,"Location: Wisconsin, USA"
+electricity,electricity,kWh,0.08,,2022,https://www.oeb.ca/rates-and-your-bill/electricity-rates,10-Jan-22,Location: Ontario
+surfactant,Cygnet Plus,gallon,46,,2022,https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=0CBQQj_IEahcKEwjgmu3npZ38AhUAAAAAHQAAAAAQDA&url=https%3A%2F%2Fkeystonehatcheries.com%2Fproducts%2Fcygnet-plus-surfactant-1-gal&psig=AOvVaw3MV-q-AxynShT7rClMWwL3&ust=1672350655125926,12/28/2022,
+surfactant,Cygnet Plus,gallon,27.98,,2022,https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=0CBIQj_IEahcKEwjgmu3npZ38AhUAAAAAHQAAAAAQBg&url=https%3A%2F%2Fwww.aquadocinc.com%2Fproduct%2Fsurfactant-cygnet-plus-2-5-gallon%2F&psig=AOvVaw3MV-q-AxynShT7rClMWwL3&ust=1672350655125926,12/28/2022,
+surfactant,Cygnet Plus,gallon,97.52,,2022,https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=0CBQQj_IEahcKEwjIgsGPqJ38AhUAAAAAHQAAAAAQAg&url=https%3A%2F%2Fwww.pondsolutions.com%2Fpond-chemicals%2Fsurfactants-and-activators%2Fcygnet-plus-1-quart%2F&psig=AOvVaw3MV-q-AxynShT7rClMWwL3&ust=1672350655125926,12/28/2022,
+surfactant,Cygnet Plus,gallon,79.96,,2022,https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=0CB4Qj_IEahcKEwjIgsGPqJ38AhUAAAAAHQAAAAAQFQ&url=https%3A%2F%2Fthepondshop.com%2Fproducts%2Fcygent-plus-surfactant-spray-adjuvant%3Fvariant%3D6057642590251%26currency%3DUSD%26utm_medium%3Dproduct_sync%26utm_source%3Dgoogle%26utm_content%3Dsag_organic%26utm_campaign%3Dsag_organic&psig=AOvVaw3MV-q-AxynShT7rClMWwL3&ust=1672350655125926,12/29/2022,
+surfactant,Southern Ag Methylated Seed Oil,gallon,62.72,,2022,https://www.amazon.com/Southern-Ag-Methylated-Seed-Surfactant/dp/B0149IA526/ref=asc_df_B0149IA526/?tag=hyprod-20&linkCode=df0&hvadid=167126632682&hvpos=&hvnetw=g&hvrand=1291265965543810596&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1019672&hvtargid=pla-305338873654&th=1,12/29/2022,
+surfactant,Alligare MSO,gallon,23.596,,2022,https://www.solutionsstores.com/methylated-seed-oil-mso?gclid=CjwKCAiA76-dBhByEiwAA0_s9ZjhSZwbipIkrgXuhZ8uyp4KHlTKrcuhyM8s-nh4bqLTdkyFiy5IKBoCpY0QAvD_BwE#156=943,12/29/2022,
+surfactant,Brandt MSO,gallon,18.78,,2022,https://www.forestrydistributing.com/brandt-mso-methylated-seed-oil-surfactant-brandt,12/29/2022,
+surfactant,Cidekick II,gallon,40.95,,2022,https://www.forestry-suppliers.com/p/17132/18911/cide-kick-ii-nonionic-spray-adjuvant-herbicides,12/28/2022,
+surfactant,Elite Platinum,gallon,77,,2022,https://azelisaes-us.com/product/elite-platinum/,12/28/2022,
+surfactant,AquaChem,gallon,15.752,,2022,https://www.arborchem.com/product/6/aquachem-90-2-5-gal-container,12/28/2022,
+surfactant,RRSI Sunset,gallon,33.6,,2022,https://azelisaes-us.com/product/rrsi-sunset/,12/28/2022,
+surfactant,Inlet,gallon,27.592,,2022,"https://lawnpropesticides.com/product/inlet/#:~:text=Inlet%20is%20a%20nonionic%20wetter,over%20all%20leaf%20tissue%20uniformly.",12/28/2022,
+surfactant,RRSI NIS,gallon,26.1,,2022,https://www.forestry-suppliers.com/p/17186/87960/rrsi-nis-non-ionic-surfactant,12/28/2022,
+surfactant,Elite Supreme,gallon,100.8,,2022,https://www.forestry-suppliers.com/p/17202/87961/elite-supreme-surfactant,12/28/2022,
+surfactant,Alligare 90 ,gallon,21.356,,2022,https://www.amazon.com/Alligare-2-5-Gallon-Surfactant-Non-Ionic/dp/B00799KJN8,12/29/2022,
+surfactant,Activator 90 Non-ionic Surfactant ,gallon,20.38,,2022,https://www.forestrydistributing.com/activator-90-surfactant-loveland-products,12/29/2022,
+surfactant,Alligare 90,gallon,15.98,,2022,https://www.keystonepestsolutions.com/index.php?main_page=product_info&products_id=349&utm_source=google&utm_medium=cpc&adpos=&scid=scplp349&sc_intid=349&gclid=CjwKCAiAkrWdBhBkEiwAZ9cdcCW5AWooevuKSPZWIXbRbjiGyC5u1vynsmqO2HXmLEzk5YqwAc5V7hoC340QAvD_BwE,12/29/2022,

@@ -1,0 +1,15 @@
+munitid,cycle_begin,cycle_end,state_begin,state_end,pr_est0_begin,pr_est1_begin,pr_est2_begin,pr_lo_begin,pr_hi_begin,pr_est0_end,pr_est1_end,pr_est2_end,pr_lo_end,pr_hi_end,t_actions,d_actions,g_actions,mnt_comb,testnote
+1,2017,2018,1,2,1,0,0,1,0,1,0,0,0,1,R,R,R,RRR,state 1-> state 2
+2,2017,2018,2,3,1,0,0,0,1,0,1,0,1,0,R,R,R,RRR,state2-> state 3
+3,2017,2018,3,4,0,1,0,1,0,0,1,0,0,1,R,R,R,RRR,state 3 -> state 4
+4,2017,2018,4,5,0,1,0,0,1,0,0,1,1,0,R,R,R,RRR,state 4 -> state 5
+5,2017,2018,5,6,0,0,1,1,0,0,0,1,0,1,R,R,R,RRR,state 5 -> state 6
+6,2017,2018,6,5,0,0,1,0,1,0,0,1,1,0,I,R,R,IRR,state6 -> state 5
+7,2017,2018,5,4,0,0,1,1,0,0,1,0,0,1,I,R,R,IRR,state 5-> state 4
+8,2017,2018,4,3,0,1,0,0,1,0,1,0,1,0,I,R,R,IRR,state 4 -> state 3
+9,2017,2018,3,2,0,1,0,1,0,1,0,0,0,1,I,R,R,IRR,state 3 -> state 2
+10,2017,2018,2,1,1,0,0,0,1,1,0,0,1,0,I,R,R,IRR,state 2 -> state 1
+11,2017,2018,5,3,0,0,1,0.8,0.2,0,1,0,0.8,0.2,G,P,F,GPF,"5,6 -> 3,4 uncertain"
+12,2017,2018,3,1,0,1,0,0.8,0.2,1,0,0,0.8,0.2,G,F,F,GFF,"3,4 -> 1,2 uncertain"
+13,2018,2019,1,2,1,0,0,1,0,1,0,0,0,1,R,R,R,RRR,out of cycle
+14,2017,2018,2,3,1,0,0,0,1,0,1,0,1,0,C,P,OTHER,CPOTHER,auto-rejected

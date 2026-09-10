@@ -1,0 +1,30 @@
+1= (GPF) "Glyphosate,Pre-Flood Clearing,Flood", 
+2= (GBR) "Glyphosate,Remove Biomass,Rest",
+
+3= (GFF) "Glyphosate,Flood,Flood",
+
+4= (GLR) "Glyphosate,Mechanical (and Leave Biomass),Rest",
+
+5= (GRG) "Glyphosate,Rest,Glyphosate",
+
+6= (GRR) "Glyphosate,Rest,Rest",
+
+7= (G+BR) "Glyphosate+,Remove Biomass,Rest",
+
+8= (G+FF) "Glyphosate+,Flood,Flood",
+
+9= (G+LR) "Glyphosate+,Mechanical (and Leave Biomass),Rest",
+
+10= (G+PF) "Glyphosate+,Pre-Flood Clearing,Flood",
+
+11= (G+RR) "Glyphosate+,Rest,Rest",
+
+12= (IRR) "Imazapyr,Rest,Rest",
+
+13= (RPF) "Rest,Pre-Flood Clearing,Flood",
+
+14= (CRC) "Cut Underwater,Rest,Cut Underwater",
+
+15= (SRS) "Spading,Rest,Spading",
+
+16= (RRR) "Rest,Rest,Rest"

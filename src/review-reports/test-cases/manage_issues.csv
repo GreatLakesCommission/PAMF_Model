@@ -1,0 +1,47 @@
+testnote,expected_behavior,treatmentid,munitid,manage_year,display,wrongyear_man,year_mismatch,has_notes,out_of_phase,short_flood,long_flood,hydro_mismatch,low_coverage,grow_after_monitor,tloc_before_monitor,coordreject_model,coordreject_cost,coordreject_amu,coordreject_note,reviewed_by,reviewed_date
+Already has decision: keep,does not display,1,1,2017,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,test,coordinator,2018-08-01
+Already has decision: reject from transition matrix update,does not display,2,1,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,test,coordinator,2018-08-01
+Already has decision: reject from cost calculations,does not display,3,1,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,test,coordinator,2018-08-01
+Already has decision: reject from annual summary,does not display,4,2,2017,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,test,coordinator,2018-08-01
+Already has decision: reject from all model sections,does not display,5,2,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,test,coordinator,2018-08-01
+No decisions and no flagged issues,does not display,6,2,2018,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+wrongyear_man is TRUE,displays with year not in current cycle message,7,3,2020,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+year_mismatch is TRUE (deprecated),does not display: year_mismatch is no longer used since dateentered was introduced,8,4,2018,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+out_of_phase is TRUE,does not display,9,4,2017,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+short_flood is TRUE,does not display,10,4,2018,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: glyphnotes,displays with has notes message,11,5,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: glyphplusnotes,displays with has notes message,12,5,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: imaznotes,displays with has notes message,13,5,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: prenotes,displays with has notes message,14,6,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: mechnotes,displays with has notes message,15,6,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: removenotes,displays with has notes message,16,6,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: cutnotes,displays with has notes message,17,7,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: spadenotes,displays with has notes message,18,7,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: floodnotes,displays with has notes message,19,7,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: restnotes,displays with has notes message,20,8,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: other,displays with has notes message,21,8,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: othernotes,displays with has notes message,22,8,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: cutdescribe,displays with has notes message,23,9,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: predescribe,displays with has notes message,24,9,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: glyphsurfactantused,displays with has notes message,25,9,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: glyphplussurfactantused,displays with has notes message,26,10,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: imazsurfactantused,displays with has notes message,27,10,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: glyphproductother,displays with has notes message,28,10,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: glyphplusproductother,displays with has notes message,29,11,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: imazproductother,displays with has notes message,30,11,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: glyphplusaddedother,displays with has notes message,31,11,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: glyphequipmodel,displays with has notes message,32,12,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: glyphplusequipmodel,displays with has notes message,33,12,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: imazequipmodel,displays with has notes message,34,12,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: removeequipmodel,displays with has notes message,35,13,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: mechequipmodel,displays with has notes message,36,13,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: cutequipmodel,displays with has notes message,37,13,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: preequipmodel,displays with has notes message,38,14,2018,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE: followdescribe,displays with has notes message,39,14,2017,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+long_flood is TRUE,displays with long flood message,40,14,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+hydro_mismatch is TRUE,displays with hydro mismatch message,41,15,2017,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+low_coverage is TRUE,does not display,42,15,2018,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+low_coverage is TRUE,does not display,43,15,2018,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+low_coverage is TRUE,does not display,44,16,2017,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+grow_after_monitor is TRUE (deprecated),does not display,45,16,2018,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+tloc_before_monitor is TRUE (deprecated),does not display,46,16,2018,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,NA,NA,NA

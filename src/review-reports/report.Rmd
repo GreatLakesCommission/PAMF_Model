@@ -1,0 +1,308 @@
+---
+output: # choose either word_document or html_document
+  #html_document
+  word_document:
+    reference_docx: word-styles-reference.docx
+params:
+  #mond: !r monitor    # Monitoring data   (uncomment for interactive use)
+  #mand: !r manage     # Management data   (uncomment for interactive use)
+  #moni: !r mon_issues # Monitoring issues (uncomment for interactive use)
+  #mani: !r man_issues # Management issues (uncomment for interactive use)
+  #ce:   2020          # Second/Final year of the cycle (for interactive use)
+  mond: NULL # Monitoring data
+  mand: NULL # Management data
+  moni: NULL # Monitoring issues
+  mani: NULL # Management issues
+  ce:   NULL # Second/Final year of the cycle
+---
+
+```{r source, include=FALSE}
+## Uncomment this section to knit from console rather than through app.R
+
+## Source the functions (only needed if you want to run this script on its own)
+# source("./src/review-reports/checkbox-functions.R")
+
+## the render command, if you need to generate the report directly:
+# rmarkdown::render("report.RMD", params=list(mond=mon_data, mand=man_data, moni=mon_issues, mani=man_issues, ce=2018))
+# make sure that mon_data, man_data, mon_issues, man_issues are loaded & enter
+# the year you want
+# man_data is assumed to already have the application dates merged in
+# The rendered file is called report.docx and it's written to the working
+# directory
+```
+
+``` {r title, results = 'asis', echo=FALSE}
+cat("# Reports with possible issues: ", params$ce - 1, "-", params$ce, " Cycle", sep = "")
+cat("  \n")
+cat("#### *Date generated:", as.character(Sys.Date()), "*")
+```
+
+Not all reports submitted through the Web Hub contain information that the PAMF 
+model can use. In many cases, we cannot sort usable from unusable reports using automated methods (e.g. when there's disqualifying information in a 'notes' 
+field). PAMF's interactive UI has flagged all reports from this cycle that 
+require your judgement, and will prompt you for decisions about whether they 
+should be passed on to different parts of the PAMF model.
+
+**This document is a preview of what you'll see on PAMF's interactive UI checkbox screen.**
+It allows you to look through the flagged reports at your own pace, without 
+having to keep the UI open as you work through the list.
+
+**Tips and tricks:**
+
+* To view without page breaks in Word, select "Web Layout" from the "View" ribbon.
+* Use the decision keys below each report to keep track of exclusions.
+* You can annotate this document by adding comments.
+* You can close the UI and return to it later, without losing any information 
+about which reports need your attention. Reports with saved decisions at the 
+time that you close the UI, however, will not display again unless you initiate 
+a different model run. This is to prevent different decisions from being applied 
+to the same report at different times.
+* If you believe that the content of any report should be changed, contact the 
+participant and make the changes through the Web Hub. To make these changes 
+visible to the PAMF model, conduct another database pull and initiate a model run
+on the new download. This process is cumbersome, but it's important for reproducibility that we maintain a single centralized version of the data.
+* Reports without issues that need human judgement are not displayed in this document.
+
+ \newline 
+ 
+***
+
+
+```{r calculate, include=FALSE}
+## Get information needed for display, but don't display it yet
+#  In the final document, information about reports with possible issues will be
+#  grouped by management unit, with two sub-headings: Monitoring Reports and
+#  Management Reports.
+#
+#  Each sub-section will:
+#    * only appear if it is non-empty (one or more reports have possible issues)
+#    * contain a list of possible issues followed by relevant information from
+#      the reports (e.g. notes; a table with stem counts)
+
+## 1. Management Unit IDs
+
+# First, find the munitids and report ids of reports with possible issues & sort
+# by munitid
+# then monitorid to reflect the way that possible issues will be displayed
+flagged_mon <- getFlaggedMon(params$moni, params$ce)
+flagged_mon <- flagged_mon[order(flagged_mon$munitid, flagged_mon$monitorid), ]
+flagged_man <- getFlaggedMan(params$mani, params$ce)
+flagged_man <- flagged_man[order(flagged_man$munitid, flagged_man$treatmentid), ]
+
+# Get munitids that have at least one associated report with a potential issue
+flagged_mu <- union(flagged_mon$munitid, flagged_man$munitid)
+flagged_mu <- flagged_mu[order(flagged_mu)]
+
+
+## 2. Monitoring reports with possible issues
+# Get a list of messages describing the possible issues with each report
+describe_issues_mon <- lapply(flagged_mon$monitorid, getMonFlags, params$moni)
+
+
+## 3. Management report with possible issues
+# Get a list of messages describing the possible issues with each report
+describe_issues_man <- lapply(flagged_man$treatmentid, getManFlags, params$mani)
+
+# Extract notes from management reports. Since there are close to 30 notes
+# fields in each report, put them into three categories: management action notes,
+# product/equipment notes, and guidance compliance notes.
+#
+# First, pull up the management reports associated with man_flagged$treatmentid,
+# and put them into display order.
+mand_flagged <- params$mand[params$mand$treatmentid %in% flagged_man$treatmentid, ]
+mand_flagged <- mand_flagged[order(mand_flagged$munitid, mand_flagged$treatmentid), ]
+
+# Second, keep only the first row with each treatmentid. Multiple rows with the
+# same treatmentid belong to the same report and only vary in their application
+# information, which we don't use in this step.
+mand_flagged <- mand_flagged[which(!duplicated(mand_flagged$treatmentid)), ]
+
+# Then, since the functions that extract the notes each take a single row
+# of the report table, break the dataframe into a list of rows
+fm_rows <- split(mand_flagged, seq(nrow(mand_flagged)))
+
+ma_notes <- lapply(fm_rows, getMAnotes)
+pe_notes <- lapply(fm_rows, getPEnotes)
+gc_notes <- lapply(fm_rows, getGCnotes)
+
+## If knitting to word_document, replace all instances of <br> in the *_notes
+#  lists with "  \n"
+#  These lists are generated for the checkbox interface, which uses <br> as a
+#  line break; however word documents recognize "\n" instead
+if (rmarkdown::all_output_formats(knitr::current_input()) == "word_document") {
+  describe_issues_mon <- gsub("<br>", "  \n", describe_issues_mon)
+  describe_issues_man <- gsub("<br>", "  \n", describe_issues_man)
+
+  ma_notes <- gsub("<br>", "  \n", ma_notes)
+  pe_notes <- gsub("<br>", "  \n", pe_notes)
+  gc_notes <- gsub("<br>", "  \n", gc_notes)
+}
+```
+
+```{r display, echo=FALSE, results="asis", strip.white=FALSE}
+# Display munitids iteratively
+for (fm in flagged_mu) {
+  cat("# **Management Unit", fm,  " - ", enroll_data[enroll_data$munitid == fm, "name"], "**{-}  \n")
+  cat("  \n\n")
+
+  ## Get flagged reports associated with the MU
+  mon_ids <- flagged_mon[flagged_mon$munitid == fm, "monitorid"]
+  man_ids <- flagged_man[flagged_man$munitid == fm, "treatmentid"]
+
+  ## Display Monitoring Reports
+  if (length(mon_ids > 0)) {
+    cat("## Monitoring Reports {-}  \n")
+    cat("  \n\n")
+    for (m in mon_ids) {
+      cat("### **Monitoring Report", m, "** {-}  \n")
+
+      ## Describe possible issues
+      cat("**Possible Issues:  \n**")
+      report_index <- which(flagged_mon$monitorid == m)
+      cat(describe_issues_mon[[report_index]])
+      cat("  \n\n")
+
+      ## Display notes
+      cat("**Notes:  \n**")
+      cat(params$mond[params$mond$monitorid == m, "notes"])
+      cat("  \n\n")
+
+      ## Display relevant information from the report
+      print(knitr::kable(params$mond[
+        params$mond$monitorid == m,
+        c(
+          "dateentered", "monitoringdate",
+          "establishment", "q1stemcount",
+          "q2stemcount", "q3stemcount",
+          "q4stemcount", "q5stemcount", "userid"
+        )
+      ],
+      col.names = c(
+        "date entered", "monitoring date",
+        "establishment", "q1 stem count",
+        "q2 stem count", "q3 stem count",
+        "q4 stem count", "q5 stem count",
+        "user ID"
+      ),
+      row.names = FALSE
+      ))
+      cat(" \n")
+
+      ## Display name/date space to keep track of who reviewed the report and when
+      cat("  \n")
+      cat("**Reviewed By:  \n**")
+      cat("  \n")
+      cat("**Review Date:  \n**")
+      cat("  \n")
+
+      ### Display the checkbox options that the UI user will see
+      cat("**Decisions:  **")
+      print(knitr::kable(data.frame(
+        choices = c(
+          "Exclude from Transition Matrix Update",
+          "Exclude from Guidance and Transition Matrix Update",
+          "Exclude from Annual Summary",
+          "Exclude from Post-hoc Analysis"
+        ),
+        entries = c("____", "____", "____", "____")
+      ),
+      col.names = c(" ", " "),
+      row.names = FALSE
+      ))
+      cat("  \n")
+    } # end loop through monitoring reports
+    cat("  \n\n")
+  } # end conditional (display monitoring reports)
+
+  ## Display Managment Reports
+  if (length(man_ids > 0)) {
+    cat("## Management Reports {-}  \n")
+    cat("  \n\n")
+    for (m in man_ids) {
+      cat("### **Management Report", m, "** {-}  \n")
+
+      ## Describe Possible Issues
+      cat("**Possible Issues:  \n**")
+      report_index <- which(flagged_man$treatmentid == m)
+      cat(describe_issues_man[[report_index]])
+      cat("  \n\n")
+
+      ## Display notes
+      cat("**Management Action Notes:  \n**")
+      cat(ma_notes[[report_index]])
+      cat("  \n\n")
+      cat("**Product/EquipmentNotes:  \n**")
+      cat(pe_notes[[report_index]])
+      cat("  \n\n")
+      cat("**Guidance Compliance Notes:  \n**")
+      cat(gc_notes[[report_index]])
+      cat("  \n\n")
+
+      ## Display relevant information from the report
+      #  Depending on the year, display with either managementdate or dateentered
+      if (params$ce < 2020) {
+        print(knitr::kable(params$mand[
+          params$mand$treatmentid == m,
+          c(
+            "managementdate", "treatmethod",
+            "phase", "munitcondition", "floodmonths",
+            "applicationdate"
+          )
+        ],
+        col.names = c(
+          "management date", "action", "phase",
+          "hydro condition", "flood months",
+          "application date"
+        ),
+        row.names = FALSE
+        ))
+      } else {
+        print(knitr::kable(params$mand[
+          params$mand$treatmentid == m,
+          c(
+            "dateentered", "treatmethod",
+            "phase", "munitcondition", "floodmonths",
+            "applicationdate"
+          )
+        ],
+        col.names = c(
+          "date entered", "action", "phase",
+          "hydro condition", "flood months",
+          "application date"
+        ),
+        row.names = FALSE
+        ))
+      }
+
+      cat("  \n")
+
+      ## Display name/date space to keep track of who reviewed the report and when
+      cat("  \n")
+      cat("**Reviewed By:  \n**")
+      cat("  \n")
+      cat("**Review Date:  \n**")
+      cat("  \n")
+
+      ### Display the checkbox options that the UI user will see
+      cat("**Decisions:  **")
+      print(knitr::kable(data.frame(
+        choices = c(
+          "Exclude from Transition Matrix Update",
+          "Exclude from Cost Calculation",
+          "Exclude from Annual Summary",
+          "Exclude from Post-hoc Analysis"
+        ),
+        entries = c("____", "____", "____", "____")
+      ),
+      col.names = c(" ", " "),
+      row.names = FALSE
+      ))
+      cat("  \n")
+    } # end loop through management reports
+    cat("  \n")
+  } # end conditional (display management reports)
+  cat("  \n")
+  cat("***")
+  cat("  \n  \n  \n")
+} # end for
+```

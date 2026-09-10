@@ -1,0 +1,38 @@
+type,name,unit,cost_per_unit,herb_code,cost_year
+human,student,hour,11.43,NA,2022
+human,volunteer,hour,5.72,NA,2022
+human,seasonal,hour,19.73,NA,2022
+human,full,hour,22.48,NA,2022
+glyphosate,AquaNeat,gallon,58.66,2,2022
+glyphosate,AquaMaster,gallon,39.98,3,2022
+glyphosate,Accord Concentrate,gallon,60.2,1,2022
+glyphosate,AquaPro,gallon,58.66,4,2022
+glyphosate,AquaStar,gallon,58.8,5,2022
+glyphosate,Glyphos Aquatic,gallon,58.66,6,2022
+glyphosate,Glyphomate 41 Weed and Grass Killer Plus,gallon,43.67,7,2022
+glyphosate,Rodeo,gallon,59.9,8,2022
+glyphosate,Roundup Custom,gallon,56.1,9,2022
+glyphosate,Roundup WeatherMAX,gallon,58.66,10,2022
+glyphosate,Shore-Klear,gallon,45.11,11,2022
+glyphosate,Shore-Klear Plus,gallon,59.99,12,2022
+glyphosate,Shoreline Defense,gallon,126.99,13,2022
+glyphosate,VisionMAX,gallon,58.66,14,2022
+glyphosate,Other,gallon,58.66,15,2022
+imazapyr,Arsenal,gallon,153.18,1,2022
+imazapyr,Arsenal Powerline,gallon,87.98,2,2022
+imazapyr,Habitat,gallon,119.98,3,2022
+imazapyr,Nufarm Polaris,gallon,82.38,4,2022
+imazapyr,Nufarm Polaris AC Complete,gallon,159.98,5,2022
+imazapyr,Other,gallon,120.7,6,2022
+added,Arsenal,gallon,153.18,1,2022
+added,Arsenal Powerline,gallon,87.98,2,2022
+added,ClearCast,gallon,350.95,3,2022
+added,Habitat,gallon,119.98,4,2022
+added,Nufarm Polaris,gallon,82.38,5,2022
+added,Nufarm Polaris AC Complete,gallon,159.98,6,2022
+added,Other,gallon,159.08,7,2022
+fuel,gas,gallon,3.47,NA,2022
+fuel,diesel,gallon,3.78,NA,2022
+fuel,jet,gallon,5.1,NA,2022
+fuel,avgas,gallon,5.46,NA,2022
+electricity,electricity,kWh,0.11,NA,2022

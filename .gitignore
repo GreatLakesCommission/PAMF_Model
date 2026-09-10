@@ -1,0 +1,9 @@
+.Rproj.user
+.Rproj
+.Rhistory
+.RData
+.Ruserdata
+midcycle-forecasts/*/*
+model-runs/*/*
+database-downloads/*/*
+phragmites-adaptive-management-framework-model.Rproj

@@ -1,0 +1,44 @@
+"type","name","unit","cost_per_unit","herb_code","cost_year"
+"glyphosate","AquaNeat","gallon",43.58,2,2023
+"glyphosate","AquaMaster","gallon",79.98,3,2023
+"glyphosate","Accord Concentrate","gallon",72.48,1,2023
+"glyphosate","AquaPro","gallon",93.84,4,2023
+"glyphosate","AquaStar","gallon",75.28,5,2023
+"glyphosate","Glyphos Aquatic","gallon",93.84,6,2023
+"glyphosate","Glyphomate 41 Weed and Grass Killer Plus","gallon",93.84,7,2023
+"glyphosate","Rodeo","gallon",62.38,8,2023
+"glyphosate","Roundup Custom","gallon",51.98,9,2023
+"glyphosate","Roundup WeatherMAX","gallon",93.84,10,2023
+"glyphosate","Shore-Klear","gallon",184.88,11,2023
+"glyphosate","Shore-Klear Plus","gallon",198,12,2023
+"glyphosate","Shoreline Defense","gallon",197.5,13,2023
+"glyphosate","VisionMAX","gallon",93.84,14,2023
+"glyphosate","Roundup ProMax","gallon",54.38,16,2023
+"glyphosate","Farm General Aquatic Herbicide","gallon",66.99,17,2023
+"glyphosate","Alligare Glyphosate 5.4","gallon",38.64,18,2023
+"glyphosate","Roundup WeatherPro","gallon",93.84,19,2023
+"added","Alligare Imazapyr 4 SL","gallon",146.95,8,2023
+"added","Arsenal","gallon",194.79,1,2023
+"added","Arsenal Powerline","gallon",106.38,2,2023
+"added","ClearCast","gallon",339.95,3,2023
+"added","Habitat","gallon",138,4,2023
+"added","Habitat Aqua","gallon",624.4,9,2023
+"added","Nufarm Polaris","gallon",82.38,5,2023
+"added","Nufarm Polaris AC Complete","gallon",153.98,6,2023
+"electricity","electricity","kWh",0.11,NA,2023
+"fuel","avgas","gallon",6.6,NA,2023
+"fuel","diesel","gallon",4.06,NA,2023
+"fuel","gas","gallon",3.79,NA,2023
+"fuel","jet","gallon",5.99,NA,2023
+"human","full","hour",24.29,NA,2023
+"human","seasonal","hour",20.63,NA,2023
+"human","student","hour",13.73,NA,2023
+"imazapyr","Alligare Imazapyr 4 SL","gallon",146.95,7,2023
+"imazapyr","Arsenal","gallon",194.79,1,2023
+"imazapyr","Arsenal Powerline","gallon",106.38,2,2023
+"imazapyr","Habitat","gallon",138,3,2023
+"imazapyr","Habitat Aqua","gallon",624.4,8,2023
+"imazapyr","Nufarm Polaris","gallon",82.38,4,2023
+"imazapyr","Nufarm Polaris AC Complete","gallon",153.98,5,2023
+"surfactant","surfactant","gallon",37.32,NA,2023
+"human","volunteer","hour",6.87,NA,2023

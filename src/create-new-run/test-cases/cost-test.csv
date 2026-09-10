@@ -1,0 +1,38 @@
+type,name,unit,cost_per_unit,herb_code,cost_year
+human,student,hour,aaaaa,NA,2018
+human,volunteer,hour,aaaaa,NA,2018
+human,seasonal,hour,aaaaa,NA,2018
+human,full,hour,aaaaa,NA,2018
+glyphosate,AquaNeat,gallon,aaaaa,2,2018
+glyphosate,AquaMaster,gallon,aaaaa,3,2018
+glyphosate,Accord Concentrate,gallon,aaaaa,1,2018
+glyphosate,AquaPro,gallon,aaaaa,4,2018
+glyphosate,AquaStar,gallon,aaaaa,5,2018
+glyphosate,Glyphos Aquatic,gallon,NA,6,2018
+glyphosate,Glyphomate 41 Weed and Grass Killer Plus,gallon,aaaaa,7,2018
+glyphosate,Rodeo,gallon,aaaaa,8,2018
+glyphosate,Roundup Custom,gallon,aaaaa,9,2018
+glyphosate,Roundup WeatherMAX,gallon,aaaaa,10,2018
+glyphosate,Shore-Klear,gallon,aaaaa,11,2018
+glyphosate,Shore-Klear Plus,gallon,aaaaa,12,2018
+glyphosate,Shoreline Defense,gallon,aaaaa,13,2018
+glyphosate,VisionMAX,gallon,NA,14,2018
+glyphosate,Other,gallon,aaaaa,15,2018
+imazapyr,Arsenal,gallon,aaaaa,1,2018
+imazapyr,Arsenal Powerline,gallon,aaaaa,2,2018
+imazapyr,Habitat,gallon,aaaaa,3,2018
+imazapyr,Nufarm Polaris,gallon,aaaaa,4,2018
+imazapyr,Nufarm Polaris AC Complete,gallon,aaaaa,5,2018
+imazapyr,Other,gallon,aaaaa,6,2018
+added,Arsenal,gallon,aaaaa,1,2018
+added,Arsenal Powerline,gallon,aaaaa,2,2018
+added,ClearCast,gallon,aaaaa,3,2018
+added,Habitat,gallon,aaaaa,4,2018
+added,Nufarm Polaris,gallon,aaaaa,5,2018
+added,Nufarm Polaris AC Complete,gallon,aaaaa,6,2018
+added,Other,gallon,aaaaa,7,2018
+fuel,gas,gallon,aaaaa,NA,2018
+fuel,diesel,gallon,aaaaa,NA,2018
+fuel,jet,gallon,aaaaa,NA,2018
+fuel,avgas,gallon,aaaaa,NA,2018
+electricity,electricity,kWh,aaaaa,NA,2018

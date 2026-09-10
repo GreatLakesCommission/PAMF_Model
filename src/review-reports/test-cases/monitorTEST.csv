@@ -1,0 +1,16 @@
+testnote,expected_behavior,monitorid,munitid,establishment,q1stemcount,q2stemcount,q3stemcount,q4stemcount,q5stemcount,dateentered,monitoringdate,notes,userid
+Already has decision: keep,does not display,1,1,0,1,2,3,4,5,2018-07-19,2018-07-19,NA,101
+Already has decision: reject from transition matrix update,does not display,2,2,1,1,2,3,4,5,2018-07-19,2018-07-19,NA,102
+Already has decision: reject from guidance,does not display,3,3,2,1,2,3,4,5,2018-07-19,2018-07-19,NA,103
+Already has decision: reject from annual summary,does not display,4,4,0,1,2,3,4,5,2018-07-19,2018-07-19,NA,104
+Already has decision: reject from all model sections,does not display,5,5,1,1,2,3,4,5,2018-07-19,2018-07-19,NA,105
+No decisions and no flagged issues,does not display,6,6,2,1,2,3,4,5,2018-07-19,2018-07-19,NA,106
+wrongyear_mon is TRUE,displays with wrong year message,7,7,2,1,2,3,4,5,2018-07-19,2020-07-19,NA,109
+year_mismatch is TRUE,displays with year mismatch message,8,8,0,1,2,3,4,5,2017-08-02,2018-07-19,NA,110
+near_manage is TRUE,displays with near manage message,9,9,1,1,2,3,4,5,2018-07-19,2018-07-19,NA,111
+month_mismatch is TRUE,displays with month mismatch message,10,10,1,1,2,3,4,5,2018-06-19,2018-09-19,NA,112
+has_notes is TRUE,displays with has notes message,11,11,2,1,2,3,4,5,2018-07-19,2018-07-19,Here are some notes,113
+near_window is TRUE,displays with near window message,12,12,0,1,2,3,4,5,2018-07-19,2018-06-06,NA,114
+stems_missing is TRUE,displays with stems missing message,13,13,1,1,2,NA,4,5,2018-07-19,2018-07-19,NA,115
+stems_zero is TRUE,displays with stems zero message,14,14,2,1,2,3,0,5,2018-07-19,2018-07-19,NA,116
+stems_high is TRUE,displays with stems high message,15,15,0,1,2,3,4,55,2018-07-19,2018-07-19,NA,117

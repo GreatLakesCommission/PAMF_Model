@@ -1,0 +1,44 @@
+type,name,unit,cost_per_unit,herb_code,cost_year
+added,Alligare Imazapyr 4 SL,gallon,105.98,8,2025
+added,Arsenal,gallon,109.18,1,2025
+added,Arsenal Powerline,gallon,106.38,2,2025
+added,ClearCast,gallon,339.95,3,2025
+added,Habitat,gallon,130.38,4,2025
+added,Habitat Aqua,gallon,696.82,9,2025
+added,Nufarm Polaris,gallon,79.98,5,2025
+added,Nufarm Polaris AC Complete,gallon,137.98,6,2025
+electricity,electricity,kWh,0.13,NA,2025
+fuel,avgas,gallon,6.32,NA,2025
+fuel,diesel,gallon,3.64,NA,2025
+fuel,gas,gallon,3.27,NA,2025
+fuel,jet,gallon,5.79,NA,2025
+glyphosate,Accord Concentrate,gallon,68.98,1,2025
+glyphosate,Alligare Glyphosate 5.4,gallon,41.7,18,2025
+glyphosate,AquaMaster,gallon,41.98,3,2025
+glyphosate,AquaNeat,gallon,30.38,2,2025
+glyphosate,AquaPro,gallon,34,4,2025
+glyphosate,AquaStar,gallon,67.8,5,2025
+glyphosate,Farm General Aquatic Herbicide,gallon,74.99,17,2025
+glyphosate,Glyphomate 41 Weed and Grass Killer Plus,gallon,65.68,7,2025
+glyphosate,Glyphos Aquatic,gallon,65.68,6,2025
+glyphosate,Rodeo,gallon,70.75,8,2025
+glyphosate,Roundup Custom,gallon,26.78,9,2025
+glyphosate,Roundup ProMax,gallon,41.7,16,2025
+glyphosate,Roundup WeatherMAX,gallon,109.11,10,2025
+glyphosate,Roundup WeatherPro,gallon,49.17,19,2025
+glyphosate,Shore-Klear,gallon,120.8,11,2025
+glyphosate,Shore-Klear Plus,gallon,38.59,12,2025
+glyphosate,Shoreline Defense,gallon,179.95,13,2025
+glyphosate,VisionMAX,gallon,49.17,14,2025
+human,full,hour,28.79,NA,2025
+human,seasonal,hour,24.22,NA,2025
+human,student,hour,15.48,NA,2025
+human,volunteer,hour,7.74,NA,2025
+imazapyr,Alligare Imazapyr 4 SL,gallon,105.98,7,2025
+imazapyr,Arsenal,gallon,109.18,1,2025
+imazapyr,Arsenal Powerline,gallon,106.38,2,2025
+imazapyr,Habitat,gallon,130.38,3,2025
+imazapyr,Habitat Aqua,gallon,696.82,8,2025
+imazapyr,Nufarm Polaris,gallon,79.98,4,2025
+imazapyr,Nufarm Polaris AC Complete,gallon,137.98,5,2025
+surfactant,surfactant,gallon,41.66,NA,2025

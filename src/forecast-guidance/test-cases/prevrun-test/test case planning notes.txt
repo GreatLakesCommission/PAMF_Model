@@ -1,0 +1,31 @@
+2020-12-09
+MCFG TEST CASES/TEST CASE DATA
+
+Midcycle test cases
+* everything is fine
+	* no reported translocating, dormant actions in the current cycle
+	* reported translocating action is compatible with planned combination
+	* reported dormant action is compatible with planned combination
+	* reported translocating, dormant actions are compatible with planned combination
+* there's a growing report
+	* possible, depending on where date threshold is
+* monitoring report is missing
+	* monitoring reports do exist but for wrong year
+* monitoring report is rejected from guidance
+* planned combination is incompatible with management restriction
+* planned combination is incompatible with completed action(s)
+	* translocating
+	* dormant
+	* both?
+
+
+
+previous run data features:
+* in-cycle and out-of-cycle years in each cumulative file
+	* datpak
+	* monitor-issues
+	* transition_matrices
+	* policies
+* datpak
+	* rejected monitoring report
+	* missing monitoring report

@@ -1,0 +1,26 @@
+id,munitid,dateentered,phase,treatmethod,test_note
+2,2,2525-10-01,0,0,everything ok; translocating action compatible with planned management
+3,3,2525-12-01,1,8,everything ok; dormant action compatible with planned management
+4,4,2525-10-01,0,0,everything ok; all reported actions compatible with planned management
+4,4,2525-12-01,1,9,everything ok; all reported actions compatible with planned management
+17,17,2525-08-08,2,8,growtaken is not empty
+23,23,2525-10-01,0,3,planned combination incompatible with reported translocating action
+24,24,2525-12-01,1,3,planned combination incompatible with reported dormant action
+25,25,2525-10-01,0,3,"planned combination incompatible with reported translocating, dormant actions"
+26,25,2525-12-01,1,3,"planned combination incompatible with reported translocating, dormant actions"
+27,201,2525-10-01,0,3,more than one management report with the same action; action is compatible with planned combination
+28,201,2525-10-01,0,3,more than one management report with the same action; action is compatible with planned combination
+29,202,2525-12-01,1,3,more than one management report with the same action; action is compatible with planned combination
+30,202,2525-12-01,1,3,more than one management report with the same action; action is compatible with planned combination
+31,203,2525-10-01,0,4,more than one management report with the same action; action is compatible with planned combination
+32,203,2525-10-01,0,4,more than one management report with the same action; action is compatible with planned combination
+33,203,2525-12-01,1,3,more than one management report with the same action; action is compatible with planned combination
+34,203,2525-12-01,1,3,more than one management report with the same action; action is compatible with planned combination
+35,231,2525-10-01,0,1,management reports for different actions in same phase
+36,231,2525-10-01,0,2,management reports for different actions in same phase
+37,241,2525-12-01,1,3,management reports for different actions in same phase
+38,241,2525-12-01,1,4,management reports for different actions in same phase
+39,251,2525-10-01,0,5,management reports for different actions in same phase
+40,251,2525-10-01,0,6,management reports for different actions in same phase
+41,251,2525-12-01,1,7,management reports for different actions in same phase
+42,251,2525-12-01,1,8,management reports for different actions in same phase

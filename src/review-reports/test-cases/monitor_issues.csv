@@ -1,0 +1,16 @@
+testnote,expected_behavior,monitorid,munitid,monitor_year,display,multiple_report,wrongyear_mon,year_mismatch,month_mismatch,near_manage,has_notes,near_window,stems_missing,stems_zero,stems_high,coordreject_model,coordreject_guid,coordreject_amu,coordreject_note,reviewed_by,reviewed_date
+Already has decision: keep,does not display,1,1,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,test,coordinator,2020-08-01
+Already has decision: reject from transition matrix update,does not display,2,2,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,test,coordinator,2020-08-01
+Already has decision: reject from guidance,does not display,3,3,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,test,coordinator,2020-08-01
+Already has decision: reject from annual summary,does not display,4,4,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,test,coordinator,2020-08-01
+Already has decision: reject from all model sections,does not display,5,5,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,test,coordinator,2020-08-01
+No decisions and no flagged issues,does not display,6,6,2018,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+wrongyear_mon is TRUE,displays with wrong year message,7,7,2018,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+year_mismatch is TRUE,displays with year mismatch message,8,8,2016,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+near_manage is TRUE,displays with near manage message,9,9,2018,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+month_mismatch is TRUE,displays with month mismatch message,10,10,2018,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+has_notes is TRUE,displays with has notes message,11,11,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+near_window is TRUE,displays with near window message,12,12,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+stems_missing is TRUE,displays with stems missing message,13,13,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+stems_zero is TRUE,displays with stems zero message,14,14,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,NA,NA,NA
+stems_high is TRUE,displays with stems high message,15,15,2018,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,NA,NA,NA

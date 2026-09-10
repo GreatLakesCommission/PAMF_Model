@@ -1,0 +1,39 @@
+munitid,herbicide,cut,controlwater,active,test_note
+1,1,1,1,1,everything ok; no management reported in current cycle
+2,1,1,1,1,everything ok; translocating action compatible with planned management
+3,1,1,1,1,everything ok; dormant action compatible with planned management
+4,1,1,1,1,everything ok; all reported actions compatible with planned management
+5,1,1,1,1,everything ok; uncertain state
+6,1,1,1,1,everything ok; uncertain state
+7,1,1,1,1,everything ok; uncertain state
+8,1,1,1,1,everything ok; uncertain state
+9,1,1,1,1,everything ok
+10,1,1,1,1,everything ok
+11,1,1,1,1,everything ok
+12,1,1,1,1,everything ok
+13,1,1,1,1,everything ok
+14,1,1,1,1,everything ok
+15,1,1,1,1,everything ok
+16,1,1,1,1,everything ok
+17,1,1,1,1,growtaken is not empty
+18,1,1,1,1,no monitoring report for MU
+19,1,1,1,1,no monitoring report for MU in correct year
+20,1,1,1,1,monitoring report rejected from guidance (coordinator)
+21,1,1,1,1,monitoring report rejected from guidance (auto)
+22,0,0,0,1,planned combination incompatible with management restriction
+23,1,1,1,1,planned combination incompatible with reported translocating action
+24,1,1,1,1,planned combination incompatible with reported dormant action
+25,1,1,1,1,"planned combination incompatible with reported translocating, dormant actions"
+26,1,1,1,1,MU without a MCFG request
+221,0,1,1,1,planned combination incompatible with management restriction
+222,1,0,1,1,planned combination incompatible with management restriction
+223,1,1,0,1,planned combination incompatible with management restriction
+224,0,1,0,1,planned combination incompatible with management restriction
+225,1,0,0,1,planned combination incompatible with management restriction
+226,0,0,1,1,planned combination incompatible with management restriction
+201,1,1,1,1,more than one management report with the same action; action is compatible with planned combination
+202,1,1,1,1,more than one management report with the same action; action is compatible with planned combination
+203,1,1,1,1,more than one management report with the same action; action is compatible with planned combination
+231,1,1,1,1,management reports for different actions in same phase
+241,1,1,1,1,management reports for different actions in same phase
+251,1,1,1,1,management reports for different actions in same phase

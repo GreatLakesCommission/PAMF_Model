@@ -1,0 +1,133 @@
+---
+date: "May 7, 2020"
+output: word_document
+## NOTE: Rendering this file without specifying a file name will overwrite the current style document.
+#        This re-sets the file to default style settings: All manual changes will be LOST!
+---
+
+```{r setup, include=FALSE}
+## Set global options
+```
+
+## Coordinator QAQC Report 
+### Style Reference Document
+
+Some information:
+
+* This document contains a simplified mock-up of the QAQC report structure (one management unit, with one monitoring and management report each)
+* The actual QAQC reports pull their style information from this document. To change the style of those, change the styles here
+* I used the following instructions for modifying styles: https://rmarkdown.rstudio.com/articles_docx.html ("Happy collaboration with Rmd to docx")
+* No styles have been changed from the default settings as of 2020-05-07
+
+***
+
+```{r variables, include=FALSE}
+## Generate the variables that will be populated into the report mock-up
+
+munitid <- 123 # ID of management unit
+monitorid <- 45 # ID of monitoring report
+treatmentid <- 67 # ID of management report
+
+## Descriptions of possible issues
+monissues <- "Issue 1 <br> Issue 2 <br> Issue 3 <br> There are notes to review <br>"
+manissues <- "Issue 4 <br> Issue 5 <br> Issue 6 <br> There are notes to review <br>"
+
+## Notes
+monnotes <- "Unfortunately this Management Unit is totally made up. It doesn't even exist. I went ahead and monitored it anyway, hope that's OK"
+
+mannotes_ma <- "I only treated 1/3 of the area. There was no biomass to leave" # Management Action Notes
+mannotes_pe <- "Marsh Master vs. TRUXOR: Who would win?" # Product/Equipment Notes
+mannotes_gc <- "I forgot my password and don't remember the guidance" # Guidance Compliance Notes
+
+## Monitoring report
+# Note that in this and the management report, some of the values have been converted to text for
+# readability (e.g. establishment="0-10%", phase="Dormant"). This occurs in an earlier step in the model.
+monitor <- data.frame(
+  datentered = "2020-07-30",
+  monitoringdate = "2020-07-24",
+  establishment = "11-50%",
+  q1stemcount = 3,
+  q2stemcount = 4,
+  q3stemcount = 5,
+  q4stemcount = 6,
+  q5stemcount = 7,
+  userid = 99
+)
+
+## Management report
+#  Note that this dataframe reflects a management report with more than one application date. The
+#  management and application tables (from the database) are merged in an earlier step, resulting in
+#  multi-line management reports where more than one application date was entered.
+manage <- data.frame(
+  managementdate = c("2020-02-02", "2020-02-02"),
+  treatmethod = c("Mechanical & Leave Biomass", "Mechanical & Leave Biomass"),
+  phase = c("Dormant", "Dormant"),
+  applicationdate = c("2020-01-01", "2020-01-31")
+)
+```
+
+``` {r display, echo=FALSE, results='asis'}
+## I'm trying to keep as close as possible to the formatting commands in report.Rmd as of 2020-05-07,
+#  while leaving out the for loops. variable names are changed.
+
+## Management Unit
+cat("### **Management Unit", munitid, " - ", name, "**{-}  \n")
+cat("  \n\n")
+
+## Monitoring Report
+
+cat("### Monitoring Reports {-}  \n")
+cat("  \n\n")
+
+cat("#### **Monitoring Report", monitorid, "** {-}  \n")
+
+# Display Issues
+cat("**Possible Issues:  \n**")
+cat(monissues)
+cat("  \n\n")
+
+# Display notes
+cat("**Notes:  \n**")
+cat(monnotes)
+cat("  \n\n")
+
+# Display relevant information from the report
+print(knitr::kable(monitor,
+  col.names = c(
+    "date entered", "monitoring date", "establishment", "q1 stem count",
+    "q2 stem count", "q3 stem count", "q4 stem count", "q5 stem count", "user ID"
+  ),
+  row.names = FALSE
+))
+cat("  \n\n\n")
+cat("  \n")
+
+## Management Report
+
+cat("### Management Reports {-}  \n")
+cat("  \n\n")
+cat("#### **Management Report", treatmentid, "** {-}  \n")
+
+# Display issues
+cat("**Possible Issues:  \n**")
+cat(manissues)
+cat("  \n\n")
+
+# Display notes
+cat("**Management Action Notes:  \n**")
+cat(mannotes_ma)
+cat("  \n\n")
+cat("**Product/EquipmentNotes:  \n**")
+cat(mannotes_pe)
+cat("  \n\n")
+cat("**Guidance Compliance Notes:  \n**")
+cat(mannotes_gc)
+cat("  \n\n")
+
+# Display relevant information from the report
+print(knitr::kable(manage, row.names = FALSE))
+cat("  \n\n\n")
+
+cat("***")
+cat("  \n")
+```

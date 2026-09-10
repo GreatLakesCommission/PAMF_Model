@@ -1,0 +1,26 @@
+monitorid,testnote,expected behaviour,munitid,establishment,q1stemcount,q2stemcount,q3stemcount,q4stemcount,q5stemcount,dateentered,monitoringdate,monitor_year,monitor_month,notes,userid
+1,no issues,display=FALSE; issues and autoreject columns are FALSE,1,2,5,5,5,5,5,2525-07-31,2525-07-07,2525,7,NA,301
+2,has notes,display=TRUE; has_notes=TRUE,2,2,5,5,5,5,5,2525-07-31,2525-07-07,2525,7,the notes column has text,302
+3,Monitoring in June ,display=TRUE; near_window=TRUE,3,2,5,5,5,5,5,2525-06-30,2525-06-20,2525,6,NA,303
+4,Monitoring in August,display=TRUE; near_window=TRUE,4,2,5,5,5,5,5,2525-08-03,2525-08-01,2525,8,NA,304
+5,monitor_year is different than the year of the cycle's end and monitor_month is in June/July/August,display=TRUE; wrongyear_mon=TRUE,5,2,5,5,5,5,5,2524-07-31,2524-07-01,2524,7,NA,305
+6,"monitor_year is different than the year of the cycle's end, monitor_month is not in June/July/August, but dateentered is",display=TRUE; wrongyear_mon=TRUE; month_mismatch=TRUE,6,2,5,5,5,5,5,2524-07-31,2524-05-29,2524,5,NA,306
+7,"monitor_year is different than the year of the cycle's end, and neither monitor_month nor dateentered is in June/July/August",display=TRUE; wrongyear_mon=TRUE; out_of_window=TRUE; autoreject=TRUE,7,2,5,5,5,5,5,2524-05-30,2524-05-29,2524,5,NA,307
+8,dateentered is not in monitor_year,display=TRUE;  wrongyear_mon=TRUE; year_mismatch=TRUE,8,2,5,5,5,5,5,2525-07-31,2524-07-07,2524,7,NA,308
+9,monitor_month is outside of June/July/August but dateentered isn't,display=TRUE; month_mismatch is TRUE,9,2,5,5,5,5,5,2525-07-31,2525-05-30,2525,5,NA,309
+10,monitoring occurred within one month of management,display=TRUE; near_manage=TRUE,10,2,5,5,5,5,5,2525-07-31,2525-07-17,2525,7,NA,310
+25,monitoring occurred within one month of FLOOD,display=TRUE; near_manage=TRUE,25,2,5,5,5,5,5,2525-07-31,2525-07-17,2525,7,NA,311
+11,large MU with medium establishment and stem count zeroes,display=TRUE; stems_zero=TRUE,11,1,0,5,5,5,5,2525-07-31,2525-07-07,2525,7,NA,312
+12,small MU with medium establishment and stem count zeroes,display=FALSE; stems_zero=FALSE,12,1,5,0,5,5,5,2525-07-31,2525-07-07,2525,7,NA,313
+13,large MU with low establishment and stem count zeroes,display=FALSE; stems_zero=FALSE,13,0,5,5,0,5,5,2525-07-31,2525-07-07,2525,7,NA,314
+14,large MU with medium establishment and stem missing stem counts,display=TRUE; stems_missing=TRUE,14,1,NA,5,5,5,5,2525-07-31,2525-07-07,2525,7,NA,315
+15,small MU with medium establishment and missing stem counts,display=FALSE; stems_missing=FALSE,15,1,5,NA,5,5,5,2525-07-31,2525-07-07,2525,7,NA,316
+16,large MU with low establishment and missing stem counts,display=FALSE; stems_missing=FALSE,16,0,5,5,NA,5,5,2525-07-31,2525-07-07,2525,7,NA,317
+17,more than 50 stems in a quadrat,display=TRUE; stems_high=TRUE,17,2,5,5,5,5,55,2525-07-31,2525-07-07,2525,7,NA,318
+18,both monitor_month and dateentered are outside of June/July/August,display=FALSE; out_of_window=TRUE; autoreject_model=TRUE,18,2,5,5,5,5,5,2525-05-30,2525-05-20,2525,5,NA,319
+19,no issues; supports management report 42,NA,71,2,5,5,5,5,5,2525-07-31,2525-07-07,2525,7,NA,320
+20,no issues; supports management report 43,NA,72,2,5,5,5,5,5,2525-07-31,2525-07-07,2525,7,NA,321
+21,supports management report 44,NA,73,2,5,5,5,5,5,2525-08-02,2525-08-02,2525,7,NA,322
+22,no issues; suports management report 45,NA,74,2,5,5,5,5,5,2525-07-31,2525-07-07,2525,7,NA,323
+23,report belongs to inactive MU,is not added to monitor_issues,80,2,5,5,5,5,5,2525-07-31,2525-07-07,2525,7,NA,324
+24,already in monitor_issues,is not added to monitor_issues,81,2,5,5,5,5,5,2525-07-31,2525-07-07,2525,7,NA,325

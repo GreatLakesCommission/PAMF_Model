@@ -1,0 +1,17 @@
+db_tr,db_do,db_gr,tr,do,gr,mnt_code
+0,3,0,G,R,G,GRG
+2,6,8,G+,P,F,G+PF
+0,6,8,G,P,F,GPF
+2,8,8,G+,F,F,G+FF
+2,3,3,G+,R,R,G+RR
+0,8,8,G,F,F,GFF
+2,9,3,G+,L,R,G+LR
+0,9,3,G,L,R,GLR
+2,7,3,G+,B,R,G+BR
+1,3,3,I,R,R,IRR
+0,7,3,G,B,R,GBR
+0,3,3,G,R,R,GRR
+3,6,8,R,P,F,RPF
+3,3,3,R,R,R,RRR
+4,3,4,C,R,C,CRC
+5,3,5,S,R,S,SRS

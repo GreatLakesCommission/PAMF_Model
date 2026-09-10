@@ -1,0 +1,41 @@
+munitid,cycle_begin,cycle_end,autoreject_partcontrol,test_note
+1,2524,2525,FALSE,guidance == implemented. Update on diagonal
+2,2524,2525,FALSE,guidance == implemented. Update on diagonal
+3,2524,2525,FALSE,guidance == implemented. Update on diagonal
+4,2524,2525,FALSE,guidance == implemented. Update on diagonal
+5,2524,2525,FALSE,guidance == implemented. Update on diagonal
+6,2524,2525,FALSE,guidance == implemented. Update on diagonal
+7,2524,2525,FALSE,guidance == implemented. Update on diagonal
+8,2524,2525,FALSE,guidance == implemented. Update on diagonal
+9,2524,2525,FALSE,guidance == implemented. Update on diagonal
+10,2524,2525,FALSE,guidance == implemented. Update on diagonal
+11,2524,2525,FALSE,guidance == implemented. Update on diagonal
+12,2524,2525,FALSE,guidance == implemented. Update on diagonal
+13,2524,2525,FALSE,guidance == implemented. Update on diagonal
+14,2524,2525,FALSE,guidance == implemented. Update on diagonal
+15,2524,2525,FALSE,guidance == implemented. Update on diagonal
+16,2524,2525,FALSE,guidance == implemented. Update on diagonal
+17,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+18,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+19,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+20,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+21,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+22,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+23,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+24,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+25,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+26,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+27,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+28,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+29,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+30,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+31,2524,2525,FALSE,Guidance was GRG; implemented was not. Update on GRG row
+32,2524,2525,TRUE,Not a PAMF combination: do not update matrix
+33,2524,2525,TRUE,Not a PAMF combination: do not update matrix
+34,2524,2525,TRUE,Not a PAMF combination: do not update matrix
+35,2524,2525,TRUE,Not a PAMF combination: do not update matrix
+36,2524,2525,TRUE,Not a PAMF combination: do not update matrix
+37,2524,2525,TRUE,Not a PAMF combination: do not update matrix
+38,2524,2525,TRUE,Not a PAMF combination: do not update matrix
+39,3534,3535,FALSE,data package from a different cycle
+40,2524,2525,TRUE,No guidance from previous cycle

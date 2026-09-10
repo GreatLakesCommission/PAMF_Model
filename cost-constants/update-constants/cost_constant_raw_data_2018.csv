@@ -1,0 +1,68 @@
+type,name,unit,cost_per_unit,herb_code,cost_year,web_source,source_date,note
+human,student,hour,11,,2018,https://www.washingtonpost.com/news/answer-sheet/wp/2015/06/18/how-much-a-college-student-can-earn-from-a-summer-job-without-losing-financial-aid/?noredirect=on&utm_term=.b279101d06bb,2018,
+human,student,hour,10.5,,2018,https://smartasset.com/retirement/the-average-salary-by-age,2018,
+human,student,hour,13.2,,2018,https://smartasset.com/retirement/the-average-salary-by-age,2018,
+human,seasonal,hour,10.53,,2018,https://www.indeed.com/salaries/Nature-Conservation-Officer-Salaries,2018,
+human,seasonal,hour,15,,2018,https://www.parkrangeredu.org/salaries/,2018,
+human,full,hour,15.06,,2018,https://www.bls.gov/oes/current/oes454011.htm ,2018,
+human,full,hour,38.46,,2018,https://www.parkrangeredu.org/salaries/,2018,
+human,full,hour,29.31,,2018,https://www.bls.gov/ooh/life-physical-and-social-science/conservation-scientists.htm,2018,
+glyphosate,AquaNeat,gallon,33.9,2,2018,forestry-suppliers.com,2018,
+glyphosate,AquaMaster,gallon,27.108,3,2018,seedworldusa.com,2018,
+glyphosate,Accord Concentrate,gallon,33.56,1,2018,forestry-suppliers.com,2018,
+glyphosate,AquaPro,gallon,105,4,2018,http://diy.sepro.com/aquapro-3,2018,
+glyphosate,AquaStar,gallon,48.8,5,2018,http://www.newtechbio.com/catalog/duckweed-pondweed-control-c-7_9/aqua-star-herbicide-weed-control-25-gallons-p-80.html,2018,
+glyphosate,Glyphos Aquatic,gallon,NA,6,2018,,2018,
+glyphosate,Glyphomate 41 Weed and Grass Killer Plus,gallon,31.92,7,2018,https://www.southernstates.com/catalog/p-921-glyphomate-41-weed-grass-killer-25gal.aspx,2018,
+glyphosate,Rodeo,gallon,29.98,8,2018,https://www.amazon.com/Dow-Aquatic-Herbicide-gallon-Glyphosate/dp/B008QC00CC,2018,
+glyphosate,Roundup Custom,gallon,31.98,9,2018,forestry-suppliers.com,2018,
+glyphosate,Roundup WeatherMAX,gallon,32,10,2018,cropwatch.unl.edu,2018,
+glyphosate,Shore-Klear,gallon,24.95,11,2018,forestrydistributing.com,2018,
+glyphosate,Shore-Klear Plus,gallon,39.99,12,2018,https://www.ruralking.com/shor-klear-plus-1-gallon,2018,
+glyphosate,Shoreline Defense,gallon,103.99,13,2018,https://www.amazon.com/Pond-Logic-Shoreline-Defense-gal/dp/B00C0E4UJG,2018,
+glyphosate,VisionMAX,gallon,NA,14,2018,,2018,
+imazapyr,Arsenal,gallon,185.2,1,2018,forestrydistributing.com,2018,
+imazapyr,Arsenal Powerline,gallon,150,2,2018,forestrydistributing.com,2018,
+imazapyr,Habitat,gallon,126,3,2018,forestry-suppliers.com,2018,
+imazapyr,Nufarm Polaris,gallon,85.98,4,2018,forestrydistributing.com,2018,
+imazapyr,Nufarm Polaris AC Complete,gallon,68.95,5,2018,forestrydistributing.com,2018,
+added,Arsenal,gallon,185.2,,2018,forestrydistributing.com,2018,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate.
+added,Arsenal Powerline,gallon,150,,2018,forestrydistributing.com,2018,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate.
+added,ClearCast,gallon,319.96,,2018,https://www.solutionsstores.com/clearcast-herbicide?CAWELAID=120308880000027112&gclid=EAIaIQobChMIt8LkjM-U3AIVmYTICh3w3wYFEAkYASABEgK_tPD_BwE,2018,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate.
+added,Habitat,gallon,126,,2018,forestry-suppliers.com,2018,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate.
+added,Nufarm Polaris,gallon,85.98,,2018,forestrydistributing.com,2018,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate.
+added,Nufarm Polaris AC Complete,gallon,68.95,,2018,forestrydistributing.com,2018,The PAMF model assigns prices based on the Web Hub code. The encoding for imazapyr products differs depending on whether they're added to glyphosate.
+fuel,gas,gallon,2.97,,2018,AAA ,2018,"Location: Michigan, USA"
+fuel,gas,gallon,2.81,,2018,AAA ,2018,"Location: Wisconsin, USA"
+fuel,gas,gallon,2.93,,2018,AAA ,2018,"Location: Illinois, USA"
+fuel,gas,gallon,2.9,,2018,AAA ,2018,"Location: Indiana, USA"
+fuel,gas,gallon,2.77,,2018,AAA ,2018,"Location: Ohio, USA"
+fuel,gas,gallon,3.01,,2018,AAA ,2018,"Location: Pennsylvania, USA"
+fuel,gas,gallon,3.02,,2018,AAA ,2018,"Location: New York, USA"
+fuel,gas,gallon,2.75,,2018,AAA ,2018,"Location: Minnesota, USA"
+fuel,gas,gallon,4.3,,2018,globalpetrolprices.com,18-Jul,Canada
+fuel,diesel,gallon,3.26,,2018,AAA ,2018,"Location: Michigan, USA"
+fuel,diesel,gallon,3.18,,2018,AAA ,2018,"Location: Wisconsin, USA"
+fuel,diesel,gallon,3.07,,2018,AAA ,2018,"Location: Illinois, USA"
+fuel,diesel,gallon,3.22,,2018,AAA ,2018,"Location: Indiana, USA"
+fuel,diesel,gallon,3.06,,2018,AAA ,2018,"Location: Ohio, USA"
+fuel,diesel,gallon,3.01,,2018,AAA ,2018,"Location: Pennsylvania, USA"
+fuel,diesel,gallon,3.35,,2018,AAA ,2018,"Location: New York, USA"
+fuel,diesel,gallon,3.15,,2018,AAA ,2018,"Location: Minnesota, USA"
+fuel,diesel,gallon,3.79,,2018,globalpetrolprices.com ,18-Jul,Canada
+fuel,jet,gallon,2.028571429,,2018,IATA.org,2018,North America
+fuel,jet,gallon,6.61,,2018,100LL.com,2018,Northcentral US
+fuel,jet,gallon,4.97,,2018,100LL.com,2018,Northeast US
+fuel,jet,gallon,5.02,,2018,100LL.com,2018,Northwest US
+fuel,avgas,gallon,5.74,,2018,100LL.com,2018,Northwest US
+fuel,avgas,gallon,5.49,,2018,100LL.com,2018,Northeast US
+fuel,avgas,gallon,5.19,,2018,100LL.com,2018,Northcentral US
+electricity,electricity,kWh,0.1105,,2018,http://www.neo.ne.gov/statshtml/204.htm,2018,"Location: Michigan, USA"
+electricity,electricity,kWh,0.0984,,2018,http://www.neo.ne.gov/statshtml/204.htm,2018,"Location: Ohio, USA"
+electricity,electricity,kWh,0.1447,,2018,http://www.neo.ne.gov/statshtml/204.htm,2018,"Location: New York, USA"
+electricity,electricity,kWh,0.1019,,2018,http://www.neo.ne.gov/statshtml/204.htm,2018,"Location: Pennsylvania, USA"
+electricity,electricity,kWh,0.1067,,2018,http://www.neo.ne.gov/statshtml/204.htm,2018,"Location: Wisconsin, USA"
+electricity,electricity,kWh,0.0922,,2018,http://www.neo.ne.gov/statshtml/204.htm,2018,"Location: Indiana, USA"
+electricity,electricity,kWh,0.938,,2018,http://www.neo.ne.gov/statshtml/204.htm,2018,"Location: Illinois, USA"
+electricity,electricity,kWh,0.0999,,2018,http://www.neo.ne.gov/statshtml/204.htm,2018,"Location: Minnesota, USA"
+electricity,electricity,kWh,0.072,,2018,https://www.oeb.ca/rates-and-your-bill/electricity-rates,10-Jul-18,"Location: Ontario, Canada"

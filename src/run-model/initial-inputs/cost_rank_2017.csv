@@ -1,0 +1,17 @@
+mnt_comb,cost_rank_inc,reverse_rank
+RRR,1,15
+RPF,2,14
+CRC,3,13
+SRS,3,13
+GRR,4,12
+G+RR,5,11
+IRR,6,10
+GFF,7,9
+G+FF,8,8
+GLR,9,7
+GPF,10,6
+GBR,11,5
+G+LR,12,4
+G+PF,13,3
+G+BR,14,2
+GRG,15,1

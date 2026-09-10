@@ -1,0 +1,6 @@
+id,munitid,mcombination,transtaken,dormtaken,growtaken,userid,dateentered,test_note
+1,1,1,0,NA,NA,1,2525-12-12,
+2,2,13,3,NA,NA,2,2525-12-12,
+3,3,14,4,NA,NA,3,2525-12-12,
+4,4,6,3,NA,NA,4,2525-12-12,
+5,5,5,3,NA,NA,5,2525-12-12,

@@ -1,0 +1,2 @@
+monitorid,munitid,run_date,monitor_year,wrongyear_mon,year_mismatch,month_mismatch,has_notes,near_window,out_of_window,near_manage,stems_missing,stems_zero,stems_high,display ,coordreject_model,coordreject_guid,coordreject_amu,coordreject_note,reviewed_by,reviewed_date,autoreject_model,autoreject_guid
+24,81,2524-08-15,2524,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,test,Name & Name,2524-08-15,FALSE,FALSE

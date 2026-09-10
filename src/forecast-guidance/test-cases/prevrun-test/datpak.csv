@@ -1,0 +1,40 @@
+datpakid,munitid,cycle_begin,cycle_end,state_end,pr_est0_end,pr_est1_end,pr_est2_end,pr_lo_end,pr_hi_end,test_note
+1,1,2524,2525,1,1,0,0,1,0,everything ok; no management reported in current cycle
+2,2,2524,2525,2,1,0,0,0,1,everything ok; translocating action compatible with planned management
+3,3,2524,2525,3,0,1,0,1,0,everything ok; dormant action compatible with planned management
+4,4,2524,2525,4,0,1,0,0,1,everything ok; all reported actions compatible with planned management
+5,5,2524,2525,5,0,0,1,0.8,0.2,everything ok; uncertain state
+6,6,2524,2525,6,0,0,1,0.2,0.8,everything ok; uncertain state
+7,7,2524,2525,1,1,0,0,0.6,0.4,everything ok; uncertain state
+8,8,2524,2525,2,1,0,0,0.4,0.6,everything ok; uncertain state
+9,9,2524,2525,3,0,1,0,1,0,everything ok
+10,10,2524,2525,4,0,1,0,0,1,everything ok
+11,11,2524,2525,5,0,0,1,1,0,everything ok
+12,12,2524,2525,6,0,0,1,0,1,everything ok
+13,13,2524,2525,1,1,0,0,1,0,everything ok
+14,14,2524,2525,2,1,0,0,0,1,everything ok
+15,15,2524,2525,3,0,1,0,1,0,everything ok
+16,16,2524,2525,4,0,1,0,0,1,everything ok
+17,17,2524,2525,5,0,0,1,1,0,growtaken is not empty
+18,18,2524,2525,6,0,0,1,0,1,no monitoring report for MU
+19,19,2524,2525,1,1,0,0,1,0,no monitoring report for MU in correct year
+20,20,2524,2525,2,1,0,0,0,1,monitoring report rejected from guidance (coordinator)
+21,21,2524,2525,3,0,1,0,1,0,monitoring report rejected from guidance (auto)
+22,22,2524,2525,4,0,1,0,0,1,planned combination incompatible with management restriction
+23,23,2524,2525,5,0,0,1,1,0,planned combination incompatible with reported translocating action
+24,24,2524,2525,6,0,0,1,0,1,planned combination incompatible with reported dormant action
+25,25,2524,2525,1,1,0,0,1,0,"planned combination incompatible with reported translocating, dormant actions"
+26,1,2523,2524,1,1,0,0,1,0,data package from outside of the cycle
+27,26,2524,2525,1,1,0,0,1,0,MU without an MCFG request
+28,221,2524,2525,2,1,0,0,0,1,planned combination incompatible with management restriction
+29,222,2524,2525,3,0,1,0,1,0,planned combination incompatible with management restriction
+30,223,2524,2525,4,0,1,0,0,1,planned combination incompatible with management restriction
+31,224,2524,2525,5,0,0,1,1,0,planned combination incompatible with management restriction
+32,225,2524,2525,6,0,0,1,0,1,planned combination incompatible with management restriction
+33,226,2524,2525,1,1,0,0,1,0,planned combination incompatible with management restriction
+34,201,2524,2525,2,1,0,0,0,1,more than one management report with the same action; action is compatible with planned combination
+35,202,2524,2525,3,0,1,0,1,0,more than one management report with the same action; action is compatible with planned combination
+36,203,2524,2525,4,0,1,0,0,1,more than one management report with the same action; action is compatible with planned combination
+37,231,2524,2525,5,0,0,1,1,0,management reports for different actions in same phase
+38,241,2524,2525,6,0,0,1,0,1,management reports for different actions in same phase
+39,251,2524,2525,1,1,0,0,1,0,management reports for different actions in same phase
