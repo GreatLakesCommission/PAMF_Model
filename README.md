@@ -64,7 +64,7 @@ the size of the dataset, this manual review may take several hours.
 ## Suggested citation  
 
 Dumoulin, C. E., T. R. Tucker-Silva, and E. E. Jameson. 2026. *Phragmites* Adaptive 
-Management Framework Model. https://github.com/GreatLakesCommission/PAMF_Model 
+Management Framework Model v.2.0.0. https://github.com/GreatLakesCommission/PAMF_Model 
 
 ## Acknowledgements  
 
