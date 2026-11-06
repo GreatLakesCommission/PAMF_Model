@@ -522,12 +522,34 @@ handmcs_reports <- mcs_reports[(is.na(mcs_reports$gasmin & mcs_reports$gasmax) |
     (mcs_reports$dieselmin == 0 &
       mcs_reports$dieselmax == 0)), ]
 
-fuelmcs_reports <- mcs_reports[((!is.na(mcs_reports$gasmin) & mcs_reports$gasmin > 0) &
-  (!is.na(mcs_reports$gasmax) & mcs_reports$gasmax > 0)) |
-  ((!is.na(mcs_reports$dieselmin) &
-    mcs_reports$dieselmin > 0) &
-    (!is.na(mcs_reports$dieselmax) &
-      mcs_reports$dieselmax > 0)), ]
+# fuelmcs_reports <- mcs_reports[((!is.na(mcs_reports$gasmin) & mcs_reports$gasmin > 0) &
+#   (!is.na(mcs_reports$gasmax) & mcs_reports$gasmax > 0)) |
+#   ((!is.na(mcs_reports$dieselmin) &
+#     mcs_reports$dieselmin > 0) &
+#     (!is.na(mcs_reports$dieselmax) &
+#       mcs_reports$dieselmax > 0)), ]
+
+# The following code has this logic (example numbers):
+# gasmin   gasmax    Include?
+# NA	     5	     yes
+# 0	       5	     yes
+# 2	       5	     yes
+# 0	      NA       no
+# NA	    NA       no
+# 0	       0       no
+# 2	       0       no
+
+has_gas_fuel <-
+  !is.na(mcs_reports$gasmax) &
+  mcs_reports$gasmax > 0 &
+  (is.na(mcs_reports$gasmin) | mcs_reports$gasmin >= 0)
+
+has_diesel_fuel <-
+  !is.na(mcs_reports$dieselmax) &
+  mcs_reports$dieselmax > 0 &
+  (is.na(mcs_reports$dieselmin) | mcs_reports$dieselmin >= 0)
+
+fuelmcs_reports <- mcs_reports[has_gas_fuel | has_diesel_fuel, ]
 
 # Flooding
 flood_reports <- other_reports[other_reports$treatmethod == FLOOD$db, ]
