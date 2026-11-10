@@ -495,19 +495,23 @@ current_costs <- data.frame(
 # Divide up cost data by which equation needed to calculate cost ---------------
 # ==============================================================================
 
-# Contractor
+## Contractor ------------------------------------------------------------------
+
 contract_reports <- man_costs[!is.na(man_costs$hirecontractor) &
   man_costs$hirecontractor == 1, ]
 
-# subset of data where hirecontractor!=1
+# Subset of data where hirecontractor != 1
 other_reports <- man_costs[is.na(man_costs$hirecontractor) |
   man_costs$hirecontractor != 1, ]
 
-# Herbicide reports
+## Herbicide reports -----------------------------------------------------------
+
 herb_reports <- other_reports[other_reports$treatmethod %in%
   c(GLYPH$db, IMAZ$db, GLYPHPLUS$db), ]
 
-# Mechanical (includes cut underwater, spading)
+## Mechanical ------------------------------------------------------------------
+
+# includes cut underwater, spading
 mcs_reports <- other_reports[other_reports$treatmethod %in% c(
   CUT$db, SPADING$db,
   PRECLEAR$db,
@@ -515,29 +519,98 @@ mcs_reports <- other_reports[other_reports$treatmethod %in% c(
   MECHLEAVE$db
 ), ]
 
-handmcs_reports <- mcs_reports[(is.na(mcs_reports$gasmin & mcs_reports$gasmax) |
-  (mcs_reports$gasmin == 0 & mcs_reports$gasmax == 0)) &
-  (is.na(mcs_reports$dieselmin &
-    mcs_reports$dieselmax) |
-    (mcs_reports$dieselmin == 0 &
-      mcs_reports$dieselmax == 0)), ]
-
-# fuelmcs_reports <- mcs_reports[((!is.na(mcs_reports$gasmin) & mcs_reports$gasmin > 0) &
-#   (!is.na(mcs_reports$gasmax) & mcs_reports$gasmax > 0)) |
-#   ((!is.na(mcs_reports$dieselmin) &
-#     mcs_reports$dieselmin > 0) &
-#     (!is.na(mcs_reports$dieselmax) &
-#       mcs_reports$dieselmax > 0)), ]
+### Split up into hand-tools and gas-powered ------------------------------------
 
 # The following code has this logic (example numbers):
 # gasmin   gasmax    Include?
-# NA	     5	     yes
-# 0	       5	     yes
-# 2	       5	     yes
-# 0	      NA       no
-# NA	    NA       no
-# 0	       0       no
-# 2	       0       no
+# NA	     5	     yes -> fuel reports
+# 0	       5	     yes -> fuel reports
+# 2	       5	     yes -> fuel reports
+# 0	      NA       yes -> hand tool reports
+# NA	    NA       yes -> hand tool reports
+# 0	       0       yes -> hand tool reports
+# 2	       0       no -> excluded, bad data
+
+# Test data for subsetting reports below into hand tools only vs. gas powered
+# mcs_reports <- data.frame(
+# id = 1:20,
+# 
+# gasmin = c(
+#   NA, 0, NA, 0, 2, 0, NA, NA, 0, 5,
+#   NA, NA, NA, NA, 0, NA, 0, 2, NA, 0
+# ),
+# gasmax = c(
+#   NA, 0, 5, NA, 5, 5, 0, NA, 1, NA,
+#   NA, NA, NA, NA, 0, NA, 0, 0, 0, 0
+# ),
+# 
+# dieselmin = c(
+#   NA, 0, NA, NA, NA, NA, 0, 2, NA, NA,
+#   NA, 0, NA, NA, 0, NA, NA, NA, 0, 0
+# ),
+# dieselmax = c(
+#   NA, 0, NA, NA, NA, NA, 5, 5, 0, NA,
+#   NA, 1, NA, NA, 0, NA, NA, NA, 0, 0
+# ),
+# 
+# min_jet = c(
+#   NA, 0, NA, NA, NA, NA, NA, NA, NA, NA,
+#   0, NA, 10, NA, 0, NA, 0, NA, NA, 0
+# ),
+# max_jet = c(
+#   NA, 0, NA, NA, NA, NA, NA, NA, NA, NA,
+#   100, 50, NA, 0, 0, NA, 0, NA, NA, 0
+# ),
+# 
+# min_avgas = c(
+#   NA, 0, NA, NA, NA, NA, NA, NA, NA, NA,
+#   NA, NA, NA, 0, 0, 5, 0, NA, NA, 0
+# ),
+# max_avgas = c(
+#   NA, 0, NA, NA, NA, NA, NA, NA, NA, NA,
+#   NA, NA, NA, 10, 0, NA, 0, NA, NA, 0
+# ),
+# 
+# description = c(
+#   "all NA",
+#   "all zero",
+#   "gas NA-5",
+#   "gas 0-NA",
+#   "gas 2-5",
+#   "gas 0-5",
+#   "diesel 0-5",
+#   "diesel 2-5",
+#   "gas 0-1",
+#   "gas 5-NA",
+#   "jet 0-100",
+#   "jet NA-50",
+#   "jet 10-NA",
+#   "avgas 0-10",
+#   "all explicit zero",
+#   "avgas 5-NA",
+#   "all zero mixed NAs",
+#   "gas 2-0",
+#   "all mins/maxes zero",
+#   "all zero"
+# ),
+# stringsAsFactors = FALSE
+# )
+
+### Hand tools -----------------------------------------------------------------
+
+# Return only reports where there was no gas involved, only hand tools
+handmcs_reports <- mcs_reports[
+  (is.na(mcs_reports$gasmin)    | mcs_reports$gasmin == 0) &
+    (is.na(mcs_reports$gasmax)    | mcs_reports$gasmax == 0) &
+    (is.na(mcs_reports$dieselmin) | mcs_reports$dieselmin == 0) &
+    (is.na(mcs_reports$dieselmax) | mcs_reports$dieselmax == 0) &
+    (is.na(mcs_reports$min_jet)   | mcs_reports$min_jet == 0) &
+    (is.na(mcs_reports$max_jet)   | mcs_reports$max_jet == 0) &
+    (is.na(mcs_reports$min_avgas) | mcs_reports$min_avgas == 0) &
+    (is.na(mcs_reports$max_avgas) | mcs_reports$max_avgas == 0),
+]
+
+### Gas-powered tools ----------------------------------------------------------
 
 has_gas_fuel <-
   !is.na(mcs_reports$gasmax) &
@@ -549,9 +622,25 @@ has_diesel_fuel <-
   mcs_reports$dieselmax > 0 &
   (is.na(mcs_reports$dieselmin) | mcs_reports$dieselmin >= 0)
 
-fuelmcs_reports <- mcs_reports[has_gas_fuel | has_diesel_fuel, ]
+has_jet_fuel <-
+  !is.na(mcs_reports$max_jet) &
+  mcs_reports$max_jet > 0 &
+  (is.na(mcs_reports$min_jet) | mcs_reports$min_jet >= 0)
 
-# Flooding
+has_avgas_fuel <-
+  !is.na(mcs_reports$max_avgas) &
+  mcs_reports$max_avgas > 0 &
+  (is.na(mcs_reports$min_avgas) | mcs_reports$min_avgas >= 0)
+
+fuelmcs_reports <- mcs_reports[
+  has_gas_fuel |
+    has_diesel_fuel |
+    has_jet_fuel |
+    has_avgas_fuel,
+]
+
+## Flooding --------------------------------------------------------------------
+
 flood_reports <- other_reports[other_reports$treatmethod == FLOOD$db, ]
 
 floodpassive_reports <- flood_reports[(!is.na(flood_reports$floodtype == 1) &
@@ -584,7 +673,6 @@ current_costs <- rbind(
   current_costs,
   costRows(contract_cost, contract_reports, CYCLEEND)
 )
-
 
 ## Herbicide -------------------------------------------------------------------
 
@@ -840,7 +928,11 @@ rm(
   summed_peracre, cc2_rows, cc2, pamf_cycle
 )
 
-suppressWarnings(rm(cost.avgas, cost.diesel, cost.electricity, cost.fulltime.employee, cost.gas,
-  cost.jetfuel, cost.seasonal.employee, cost.student, cost.volunteer, 
-  cost.surfactant, envir = .GlobalEnv
-))
+suppressWarnings(
+  rm(has_gas_fuel, has_diesel_fuel, has_jet_fuel, has_avgas_fuel, cost.avgas, 
+     cost.diesel, cost.electricity, cost.fulltime.employee, cost.gas,
+    cost.jetfuel, cost.seasonal.employee, cost.student, cost.volunteer,
+    cost.surfactant,
+    envir = .GlobalEnv
+  )
+)
