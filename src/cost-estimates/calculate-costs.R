@@ -552,20 +552,20 @@ mcs_reports <- other_reports[other_reports$treatmethod %in% c(
 #   NA, 1, NA, NA, 0, NA, NA, NA, 0, 0
 # ),
 # 
-# min_jet = c(
+# jetmin = c(
 #   NA, 0, NA, NA, NA, NA, NA, NA, NA, NA,
 #   0, NA, 10, NA, 0, NA, 0, NA, NA, 0
 # ),
-# max_jet = c(
+# jetmax = c(
 #   NA, 0, NA, NA, NA, NA, NA, NA, NA, NA,
 #   100, 50, NA, 0, 0, NA, 0, NA, NA, 0
 # ),
 # 
-# min_avgas = c(
+# avgasmin = c(
 #   NA, 0, NA, NA, NA, NA, NA, NA, NA, NA,
 #   NA, NA, NA, 0, 0, 5, 0, NA, NA, 0
 # ),
-# max_avgas = c(
+# avgasmax = c(
 #   NA, 0, NA, NA, NA, NA, NA, NA, NA, NA,
 #   NA, NA, NA, 10, 0, NA, 0, NA, NA, 0
 # ),
