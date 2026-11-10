@@ -82,7 +82,6 @@
 # collapseCols(redundant)       # Expected behaviour: Error-- row 4 has more than one non-NA entry
 # collapseCols(redundant[1:3,]) # Expected behaviour: return a vector containing 1 2 3
 
-
 # ==============================================================================
 # Get necessary information ----------------------------------------------------
 # ==============================================================================
@@ -604,10 +603,10 @@ handmcs_reports <- mcs_reports[
     (is.na(mcs_reports$gasmax)    | mcs_reports$gasmax == 0) &
     (is.na(mcs_reports$dieselmin) | mcs_reports$dieselmin == 0) &
     (is.na(mcs_reports$dieselmax) | mcs_reports$dieselmax == 0) &
-    (is.na(mcs_reports$min_jet)   | mcs_reports$min_jet == 0) &
-    (is.na(mcs_reports$max_jet)   | mcs_reports$max_jet == 0) &
-    (is.na(mcs_reports$min_avgas) | mcs_reports$min_avgas == 0) &
-    (is.na(mcs_reports$max_avgas) | mcs_reports$max_avgas == 0),
+    (is.na(mcs_reports$jetmin)   | mcs_reports$jetmin == 0) &
+    (is.na(mcs_reports$jetmax)   | mcs_reports$jetmax == 0) &
+    (is.na(mcs_reports$avgasmin) | mcs_reports$avgasmin == 0) &
+    (is.na(mcs_reports$avgasmax) | mcs_reports$avgasmax == 0),
 ]
 
 ### Gas-powered tools ----------------------------------------------------------
@@ -623,14 +622,14 @@ has_diesel_fuel <-
   (is.na(mcs_reports$dieselmin) | mcs_reports$dieselmin >= 0)
 
 has_jet_fuel <-
-  !is.na(mcs_reports$max_jet) &
-  mcs_reports$max_jet > 0 &
-  (is.na(mcs_reports$min_jet) | mcs_reports$min_jet >= 0)
+  !is.na(mcs_reports$jetmax) &
+  mcs_reports$jetmax > 0 &
+  (is.na(mcs_reports$jetmin) | mcs_reports$jetmin >= 0)
 
 has_avgas_fuel <-
-  !is.na(mcs_reports$max_avgas) &
-  mcs_reports$max_avgas > 0 &
-  (is.na(mcs_reports$min_avgas) | mcs_reports$min_avgas >= 0)
+  !is.na(mcs_reports$avgasmax) &
+  mcs_reports$avgasmax > 0 &
+  (is.na(mcs_reports$avgasmin) | mcs_reports$avgasmin >= 0)
 
 fuelmcs_reports <- mcs_reports[
   has_gas_fuel |
@@ -638,6 +637,9 @@ fuelmcs_reports <- mcs_reports[
     has_jet_fuel |
     has_avgas_fuel,
 ]
+
+# Look for any excluded
+# setdiff(mcs_reports$treatmentid, c(fuelmcs_reports$treatmentid, handmcs_reports$treatmentid))
 
 ## Flooding --------------------------------------------------------------------
 
